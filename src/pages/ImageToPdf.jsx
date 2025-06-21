@@ -98,7 +98,7 @@ function ImageToPdf() {
             </label>
             <p className="text-gray-400 text-sm mt-4">
               Supported: JPG, PNG, GIF
-            </p>
+            </p>h
           </div>
         </div>
 

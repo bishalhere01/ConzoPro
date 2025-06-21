@@ -39,11 +39,13 @@ import CompressPdf from "./pages/CompressPdf";
 import MergePdf from "./pages/MergePdf";
 import SplitPdf from "./pages/SplitPdf";
 import PdfToWord from "./pages/PdfToWord";
-import WordToPdf from "./pages/WordToPdf";
+// import WordToPdf from "./pages/WordToPdf";
+// import WordToPdf from "./pages/WordToPdf";
 import JpgToJpeg from "./pages/JpgToJpeg";
 
 function App() {
   return (
+    <>
     <Router>
       <Helmet>
         <title>All-in-One PDF & Image Converter Tools | Asthica</title>
@@ -92,7 +94,7 @@ function App() {
             <Route path="/merge-pdf" element={<MergePdf />} />
             <Route path="/split-pdf" element={<SplitPdf />} />
             <Route path="/pdf-to-word" element={<PdfToWord />} />
-            <Route path="/word-to-pdf" element={<WordToPdf />} />
+            {/* <Route path="/word-to-pdf" element={<WordToPdf />} /> */}
 
             {/* Existing routes */}
             <Route path="/jpg-to-pdf" element={<JpgToPdf />} /> {/* important */}
@@ -116,6 +118,8 @@ function App() {
         </main>
       </div>
     </Router>
+    {/* <WordToPdf /> */}
+    </>
   );
 }
 
